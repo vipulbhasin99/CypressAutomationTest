@@ -11,5 +11,6 @@ module.exports = defineConfig({
       on("file:preprocessor", cucumber());
     },
     specPattern: "cypress/integration/*.feature",
+    experimentalSessionAndOrigin: true,
   },
 });
