@@ -2,10 +2,6 @@
 import { defineStep } from "cypress-cucumber-preprocessor/steps";
 import "cypress-iframe";
 
-Given(/^I go to "([^"]*)"$/, (url) => {
-  cy.visit(url);
-});
-
 When(/^I check "([^"]*)"$/, (args1) => {
   cy.get("#checkBoxOption1")
     .check(args1)
